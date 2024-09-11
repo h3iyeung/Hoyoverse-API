@@ -46,7 +46,7 @@ public enum APIEnvironment {
                     .gameType(GameType.ZENLESS_ZONE_ZERO)
                     .name("Zenless Zone Zero")
                     .apiUrl("https://sg-act-nap-api.hoyolab.com")
-                    .dailyCheckInApiEndpoint("https://sg-act-nap-api.hoyolab.com/event/zzz/luna/os")
+                    .dailyCheckInApiEndpoint("https://sg-act-nap-api.hoyolab.com/event/luna/zzz/os")
                     .dailyCheckInActId("e202406031448091")
                     .gameBiz("nap_global")
                     .build()),
