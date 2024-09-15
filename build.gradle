@@ -4,7 +4,7 @@ plugins {
     id 'org.ajoberstar.grgit' version '5.2.0'
 }
 
-group 'com.zvyap'
+group 'com.h3iyeung'
 version = "${getProjectVersion()}"
 
 compileJava.options.encoding = 'UTF-8'
@@ -63,7 +63,7 @@ afterEvaluate {
         publications {
             mavenJava(MavenPublication) {
                 from components.java
-                groupId 'com.github.nsmssk'
+                groupId 'com.github.h3iyeung'
                 artifactId "Hoyoverse-API"
                 version project.version
             }
