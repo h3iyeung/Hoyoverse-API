@@ -15,6 +15,7 @@ public enum APIEnvironment {
                     .name("Genshin Impact")
                     .apiUrl("https://sg-hk4e-api.hoyolab.com")
                     .dailyCheckInApiEndpoint("https://sg-hk4e-api.hoyolab.com/event/sol")
+                    .codeRedeemApiEndpoint("https://sg-hk4e-api.hoyoverse.com/common/apicdkey/api/webExchangeCdkey")
                     .dailyCheckInActId("e202102251931481")
                     .gameBiz("hk4e_global")
                     .build(),
@@ -31,6 +32,7 @@ public enum APIEnvironment {
                     .name("Honkai: Star Rail")
                     .apiUrl("https://sg-public-api.hoyolab.com")
                     .dailyCheckInApiEndpoint("https://sg-public-api.hoyolab.com/event/luna/os")
+                    .codeRedeemApiEndpoint("https://sg-hkrpg-api.hoyoverse.com/common/apicdkey/api/webExchangeCdkeyRisk")
                     .dailyCheckInActId("e202303301540311")
                     .gameBiz("hkrpg_global")
                     .build(),
@@ -39,6 +41,7 @@ public enum APIEnvironment {
                     .name("Tears of Themis")
                     .apiUrl("https://sg-public-api.hoyolab.com")
                     .dailyCheckInApiEndpoint("https://sg-public-api.hoyolab.com/event/luna/os")
+                    .codeRedeemApiEndpoint("https://sg-public-api.hoyoverse.com/common/apicdkey/api/webExchangeCdkey")
                     .dailyCheckInActId("e202202281857121")
                     .gameBiz("nxx_global")
                     .build(),
@@ -47,6 +50,7 @@ public enum APIEnvironment {
                     .name("Zenless Zone Zero")
                     .apiUrl("https://sg-act-nap-api.hoyolab.com")
                     .dailyCheckInApiEndpoint("https://sg-act-nap-api.hoyolab.com/event/luna/zzz/os")
+                    .codeRedeemApiEndpoint("https://public-operation-nap.hoyoverse.com/common/apicdkey/api/webExchangeCdkey")
                     .dailyCheckInActId("e202406031448091")
                     .gameBiz("nap_global")
                     .build()),

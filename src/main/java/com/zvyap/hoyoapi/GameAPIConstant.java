@@ -18,4 +18,6 @@ public class GameAPIConstant {
     private String dailyCheckInActId;
     private String gameBiz;
 
+    private String codeRedeemApiEndpoint;
+
 }
