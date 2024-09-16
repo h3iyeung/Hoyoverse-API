@@ -35,7 +35,7 @@ public class RedeemCodeFeature extends HoyoFeature {
     private <T> T fetchCodeEndpoint(HttpMethod method, GameType type, Class<T> responseClass, String uid,
             String cdKey) {
         GameAPIConstant constant = api.getEnvironment().getAPIConstant(type);
-        Map<String, String> data = Map.of("cdkey", cdKey, "uid", uid);
+        Map<String, String> data = Map.of("cdkey", uid, "uid", cdKey);
         HttpResponse<Supplier<T>> response = api.makeRequest(null,
                 api.buildRequest(
                         HttpUtils.createURI(constant.getCodeRedeemApiEndpoint(), "", data),
