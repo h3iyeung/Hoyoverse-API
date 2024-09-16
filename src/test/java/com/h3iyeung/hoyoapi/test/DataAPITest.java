@@ -1,4 +1,4 @@
-package com.zvyap.hoyoapi.test;
+package com.h3iyeung.hoyoapi.test;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

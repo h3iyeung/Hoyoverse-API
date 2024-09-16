@@ -1,4 +1,4 @@
-package com.zvyap.hoyoapi.test;
+package com.h3iyeung.hoyoapi.test;
 
 import com.h3iyeung.hoyoapi.*;
 import com.h3iyeung.hoyoapi.response.HoyoGetForumFullUserResponse;
