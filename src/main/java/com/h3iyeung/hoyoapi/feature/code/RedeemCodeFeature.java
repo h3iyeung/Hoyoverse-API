@@ -32,7 +32,7 @@ public class RedeemCodeFeature extends HoyoFeature {
         super(api);
     }
 
-    private <T> T fetchCodeEndpoint(HttpMethod method, GameType type, Class<T> responseClass,String uid,
+    private <T> T fetchCodeEndpoint(HttpMethod method, GameType type, Class<T> responseClass, String uid,
             String cdKey) {
         GameAPIConstant constant = api.getEnvironment().getAPIConstant(type);
         Map<String, String> data = Map.of("cdkey", cdKey, "uid", uid);
@@ -44,7 +44,7 @@ public class RedeemCodeFeature extends HoyoFeature {
                         method == HttpMethod.POST ? JsonPublisher.of(data) : null,
                         headers()),
                 new JsonBodyHandler<>(responseClass));
-
+        System.out.println(HttpUtils.createURI(constant.getCodeRedeemApiEndpoint(), "", data)+"\n"+response.statusCode());
         if (response.statusCode() != 200) {
             throw new HoyoverseHttpRequestException(response.statusCode());
         }
@@ -99,7 +99,7 @@ public class RedeemCodeFeature extends HoyoFeature {
      */
     public HoyoDailyCheckInInfoResponse hsrCodeRedeem(@NotNull GameType type,
             @NotNull String cdKey, @NotNull String uid) {
-        return fetchCodeEndpoint(HttpMethod.POST, type, HoyoDailyCheckInInfoResponse.class, cdKey,uid);
+        return fetchCodeEndpoint(HttpMethod.POST, type, HoyoDailyCheckInInfoResponse.class, cdKey, uid);
     }
 
 }

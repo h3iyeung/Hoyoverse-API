@@ -1,6 +1,6 @@
 # Hoyoverse Java API
 
-[![jitpack](https://img.shields.io/jitpack/version/com.github.zvyap/Hoyoverse-API?color=blue)](https://jitpack.io/#zvyap/Hoyoverse-API)
+[![jitpack](https://img.shields.io/jitpack/version/com.github.h3iyeung/Hoyoverse-API?color=blue)](https://jitpack.io/#h3iyeung/Hoyoverse-API)
 [![jitpack](https://img.shields.io/badge/Snapshots-JitPack-blue)](https://jitpack.io/#zvyap/Hoyoverse-API/master-SNAPSHOT)
 
 A Java library for Hoyoverse API
@@ -10,6 +10,7 @@ A Java library for Hoyoverse API
 * Honkai Impact 3RD
 * Honkai: Star Rail
 * Tears of Themis
+* Zenless Zone Zero
 
 ### **Oversea & China's server** ***supported***
 > [!NOTE]
@@ -32,7 +33,7 @@ A Java library for Hoyoverse API
 * Java 11 or newer
 
 ## How to use
-Add this project as your dependency, for more version or usage, check out - [JitPack](https://jitpack.io/#zvyap/Hoyoverse-API/)
+Add this project as your dependency, for more version or usage, check out - [JitPack](https://jitpack.io/#h3iyeung/Hoyoverse-API/)
 <br>
 For those who want use newest commit as your version, use ```master-SNAPSHOT``` as the project version
 
@@ -43,7 +44,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.github.zvyap:Hoyoverse-API:[VERSION]'
+    implementation 'com.github.h3iyeung:Hoyoverse-API:[VERSION]'
 }
 ```
 
@@ -58,7 +59,7 @@ dependencies {
 
 <dependencies>
   <dependency>
-    <groupId>com.github.zvyap</groupId>
+    <groupId>com.github.h3iyeung</groupId>
     <artifactId>Hoyoverse-API</artifactId>
     <version>[VERSION]</version>
   </dependency>
