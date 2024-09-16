@@ -1,10 +1,10 @@
 package com.zvyap.hoyoapi.test.feature;
 
-import com.zvyap.hoyoapi.APIEnvironment;
-import com.zvyap.hoyoapi.GameType;
-import com.zvyap.hoyoapi.HoyoToken;
-import com.zvyap.hoyoapi.HoyoverseAPI;
-import com.zvyap.hoyoapi.feature.daily.DailyCheckInFeature;
+import com.h3iyeung.hoyoapi.APIEnvironment;
+import com.h3iyeung.hoyoapi.GameType;
+import com.h3iyeung.hoyoapi.HoyoToken;
+import com.h3iyeung.hoyoapi.HoyoverseAPI;
+import com.h3iyeung.hoyoapi.feature.daily.DailyCheckInFeature;
 import com.zvyap.hoyoapi.test.TestConstant;
 import com.zvyap.hoyoapi.test.TestUtils;
 import org.junit.jupiter.api.Assertions;

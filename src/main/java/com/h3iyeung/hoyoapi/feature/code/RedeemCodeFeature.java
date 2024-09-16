@@ -32,10 +32,10 @@ public class RedeemCodeFeature extends HoyoFeature {
         super(api);
     }
 
-    private <T> T fetchCodeEndpoint(HttpMethod method, GameType type, Class<T> responseClass,
+    private <T> T fetchCodeEndpoint(HttpMethod method, GameType type, Class<T> responseClass,String uid,
             String cdKey) {
         GameAPIConstant constant = api.getEnvironment().getAPIConstant(type);
-        Map<String, String> data = Map.of("cdkey", cdKey, "uid", constant.getDailyCheckInActId());
+        Map<String, String> data = Map.of("cdkey", cdKey, "uid", uid);
         HttpResponse<Supplier<T>> response = api.makeRequest(null,
                 api.buildRequest(
                         HttpUtils.createURI(constant.getCodeRedeemApiEndpoint(), "", data),
@@ -97,9 +97,9 @@ public class RedeemCodeFeature extends HoyoFeature {
      * @param token HoyoToken
      * @return The information of daily status
      */
-    public HoyoDailyCheckInInfoResponse hsrCodeRedeem(@NotNull GameType type, @NotNull HoyoToken token,
-            @NotNull String cdKey) {
-        return fetchCodeEndpoint(HttpMethod.POST, type, HoyoDailyCheckInInfoResponse.class, cdKey);
+    public HoyoDailyCheckInInfoResponse hsrCodeRedeem(@NotNull GameType type,
+            @NotNull String cdKey, @NotNull String uid) {
+        return fetchCodeEndpoint(HttpMethod.POST, type, HoyoDailyCheckInInfoResponse.class, cdKey,uid);
     }
 
 }

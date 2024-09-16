@@ -1,11 +1,12 @@
 package com.zvyap.hoyoapi.test;
 
-import com.zvyap.hoyoapi.APIEnvironment;
-import com.zvyap.hoyoapi.GameType;
-import com.zvyap.hoyoapi.HoyoToken;
-import com.zvyap.hoyoapi.HoyoverseAPI;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
+
+import com.h3iyeung.hoyoapi.APIEnvironment;
+import com.h3iyeung.hoyoapi.GameType;
+import com.h3iyeung.hoyoapi.HoyoToken;
+import com.h3iyeung.hoyoapi.HoyoverseAPI;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class APITest {

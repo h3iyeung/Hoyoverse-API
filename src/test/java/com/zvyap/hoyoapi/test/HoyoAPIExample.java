@@ -1,7 +1,7 @@
 package com.zvyap.hoyoapi.test;
 
-import com.zvyap.hoyoapi.*;
-import com.zvyap.hoyoapi.response.HoyoGetForumFullUserResponse;
+import com.h3iyeung.hoyoapi.*;
+import com.h3iyeung.hoyoapi.response.HoyoGetForumFullUserResponse;
 
 //Example java on how to use HoyoverseAPI wiki
 public class HoyoAPIExample {

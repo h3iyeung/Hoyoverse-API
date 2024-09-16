@@ -1,11 +1,12 @@
 package com.zvyap.hoyoapi.test;
 
-import com.zvyap.hoyoapi.APIEnvironment;
-import com.zvyap.hoyoapi.GameType;
-import com.zvyap.hoyoapi.HoyoverseAPI;
-import com.zvyap.hoyoapi.response.MYSNavigatorsResponse;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+
+import com.h3iyeung.hoyoapi.APIEnvironment;
+import com.h3iyeung.hoyoapi.GameType;
+import com.h3iyeung.hoyoapi.HoyoverseAPI;
+import com.h3iyeung.hoyoapi.response.MYSNavigatorsResponse;
 
 public class DataAPITest {
     private HoyoverseAPI api = new HoyoverseAPI(APIEnvironment.OVERSEA);
